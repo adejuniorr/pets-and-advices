@@ -192,12 +192,12 @@ export const LoginPage = () => {
                 >
                   {isLoggingIn ? "Entrando..." : "Entrar"}
                 </PrimaryButton>
-                <Link href="/recuperar-senha">Esqueci minha senha</Link>
+                <Link href="recuperar-senha">Esqueci minha senha</Link>
               </div>
             </form>
           </div>
           <div className="bottom_links">
-            <Link href="/cadastro">Criar nova conta</Link>
+            <Link href="cadastro">Criar nova conta</Link>
             <a
               href="https://github.com/adejuniorr"
               target="_blank"

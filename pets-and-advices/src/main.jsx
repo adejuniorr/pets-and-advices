@@ -15,8 +15,9 @@ import { WorkingOnItPage } from "./WorkingOnItPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="*" element={<WorkingOnItPage />} />
       <Route path="/" element={<LoginPage />} />
+      <Route path="cadastro" element={<WorkingOnItPage />} />
+      <Route path="recuperar-senha" element={<WorkingOnItPage />} />
       {/* <Route path="home" element={<Home />}>
         <Route index element={<UserProfilePage />} />
         <Route path="pets" element={<PetsPage />} />

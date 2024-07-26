@@ -9,17 +9,18 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
-import { Home } from "./Home";
 import { LoginPage } from "./LoginPage";
+import { WorkingOnItPage } from "./WorkingOnItPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+      <Route path="*" element={<WorkingOnItPage />} />
       <Route path="/" element={<LoginPage />} />
-      <Route path="home" element={<Home />}>
-        {/* <Route index element={<UserProfilePage />} /> */}
-        {/*<Route path="pets" element={<PetsPage />} /> */}
-      </Route>
+      {/* <Route path="home" element={<Home />}>
+        <Route index element={<UserProfilePage />} />
+        <Route path="pets" element={<PetsPage />} />
+      </Route> */}
     </>
   )
 );

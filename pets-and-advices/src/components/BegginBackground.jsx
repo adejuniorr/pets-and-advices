@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BegginBackground = styled.div`
-  background-color: #fcffd7;
+  background-color: var(--yellow01);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,6 +19,7 @@ export const BegginBackground = styled.div`
   }
 
   #top-left-curve {
+    width: 360px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -72,10 +73,9 @@ export const BegginBackground = styled.div`
     }
 
     #love-letter {
-      width: 60px;
       position: absolute;
-      bottom: 40px;
-      left: 40px;
+      bottom: 20px;
+      left: 20px;
       transition: all 0.5s;
     }
 

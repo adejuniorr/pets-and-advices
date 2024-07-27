@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { useRef, useState } from "react";
 import { validateEmail } from "../utils/validateEmail";
 
-import TopLeftSVG from "/top-left-curve.svg";
-import RightSVG from "/right-curve.svg";
-import LoveLetter from "/love-letter.svg";
-import DogPaws from "/dog-paws.svg";
-import BottomRightSVG from "/bottom-right-curve.svg";
-import DecoBulbs from "/deco-bulbs.svg";
-import DogAndCatSVG from "/dog-and-cat.svg";
-import Logo from "/pets&tips - logo.svg";
+import TopLeftSVG from "/curves/top-left-curve.svg";
+import RightSVG from "/curves/right-curve.svg";
+import BottomRightSVG from "/curves/bottom-right-curve.svg";
+import LoveLetter from "/svg/love-letter.svg";
+import DogPaws from "/svg/dog-paws.svg";
+import DecoBulbs from "/svg/deco-bulbs.svg";
+import DogAndCatSVG from "/svg/dog-and-cat.svg";
+import Logo from "/svg/pets&tips - logo.svg";
 import { FaGithub, FaUser } from "react-icons/fa";
 
 import { BegginBackground } from "./components/BegginBackground";
@@ -31,8 +31,7 @@ const LoginContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    /* box-shadow: 0 0 5px #ccc; */
-    background-color: #fefefe;
+    background-color: var(--white);
     border-radius: 32px;
     padding: 16px;
 
@@ -198,8 +197,8 @@ export const LoginPage = () => {
               <div id="loginbtn-and-passwordlink">
                 <PrimaryButton
                   $width="200px"
-                  $bgcolor="#30FC8B"
-                  $fcolor="#222222"
+                  $bgcolor="var(--green05)"
+                  $fcolor="var(--black)"
                   disabled={isLoggingIn}
                 >
                   {isLoggingIn ? "Entrando..." : "Entrar"}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SVG from "/working-on-it.svg";
+import SVG from "/svg/working-on-it.svg";
 import { PrimaryButton } from "./components/buttons/PrimaryButton";
 import { FaLeftLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";

@@ -2,9 +2,15 @@ import styled from "styled-components";
 import { useRef, useState } from "react";
 import { validateEmail } from "../utils/validateEmail";
 
-import LoginCarousselImg from "/dog-and-cat.svg";
+import TopLeftSVG from "/top-left-curve.svg";
+import RightSVG from "/right-curve.svg";
+import LoveLetter from "/love-letter.svg";
+import DogPaws from "/dog-paws.svg";
+import BottomRightSVG from "/bottom-right-curve.svg";
+import DecoBulbs from "/deco-bulbs.svg";
+import DogAndCatSVG from "/dog-and-cat.svg";
 import Logo from "/pets&tips - logo.svg";
-import { FaGithub, FaReact, FaUser } from "react-icons/fa";
+import { FaGithub, FaUser } from "react-icons/fa";
 
 import { BegginBackground } from "./components/BegginBackground";
 import { Input } from "./components/inputs/Input";
@@ -16,6 +22,7 @@ const LoginContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+  z-index: 10;
 
   .left_content {
     width: 50%;
@@ -34,43 +41,40 @@ const LoginContainer = styled.div`
     }
   }
 
-  /* .right_content {
-    display: flex;
-    flex-direction: column;
-  } */
-
-  .login_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin: 0 auto;
-
-    h1 {
-      font-size: 28px;
-    }
-
-    #header_error_msg {
-      height: 20px;
-      color: red;
-    }
-
-    #loginbtn-and-passwordlink {
+  .right_content {
+    .login_form {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 16px;
-      width: 100%;
-      margin-top: 10px;
-    }
-  }
+      margin: 0 auto;
 
-  .bottom_links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 20px;
+      h1 {
+        font-size: 28px;
+      }
+
+      #header_error_msg {
+        height: 20px;
+        color: red;
+      }
+
+      #loginbtn-and-passwordlink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .bottom_links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
   }
 
   @media (max-width: 770px) {
@@ -80,8 +84,10 @@ const LoginContainer = styled.div`
       display: none;
     }
 
-    .login_form {
-      padding: 0 16px;
+    .right_content {
+      .login_form {
+        padding: 0 16px;
+      }
     }
 
     #autor-link {
@@ -150,11 +156,17 @@ export const LoginPage = () => {
 
   return (
     <BegginBackground>
+      <img src={TopLeftSVG} id="top-left-curve" alt="" />
+      <img src={RightSVG} id="right-curve" alt="" />
+      <img src={BottomRightSVG} id="bottom-right-curve" alt="" />
+      <img src={LoveLetter} id="love-letter" alt="" />
+      <img src={DogPaws} id="dog-paws" alt="" />
+      <img src={DecoBulbs} id="deco-bulbs" alt="" />
       <img src={Logo} id="login-mobile-logo" alt="" />
       <LoginContainer>
         <div className="left_content">
           <img src={Logo} alt="" id="login-desktop-logo" />
-          <img src={LoginCarousselImg} alt="" id="dog-and-cat-svg" />
+          <img src={DogAndCatSVG} alt="" id="dog-and-cat-svg" />
         </div>
 
         <div className="right_content">

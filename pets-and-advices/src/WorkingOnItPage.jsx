@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SVG from "/working-on-it.svg";
 import { PrimaryButton } from "./components/buttons/PrimaryButton";
 import { FaLeftLong } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -37,6 +38,8 @@ const Container = styled.div`
 `;
 
 export const WorkingOnItPage = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <h1>Página não encontrada</h1>
@@ -45,7 +48,7 @@ export const WorkingOnItPage = () => {
       <img src={SVG} alt="" />
       <PrimaryButton
         onClick={() => {
-          window.history.back();
+          navigate("/");
         }}
       >
         <FaLeftLong />

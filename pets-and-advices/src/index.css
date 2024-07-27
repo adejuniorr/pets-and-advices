@@ -1,5 +1,61 @@
 :root {
   font-family: 'Sansita';
+
+  --white: #fefefe;
+  --black: #222222;
+  --dark-pink: #33000F;
+  --danger-red: #CC003D;
+
+  /* Gray scale */
+  --gray01: #e6e6e6;
+  --gray02: #cccccc;
+  --gray03: #b3b3b3;
+  --gray04: #999999;
+  --gray05: #808080;
+  --gray06: #666666;
+  --gray07: #4D4D4D;
+  --gray08: #333333;
+
+  /* Green colors */
+  --green01: #CCFFDB;
+  --green02: #99FFB8;
+  --green03: #66FF94;
+  --green04: #33FF71;
+  --green05: #1AFF80;
+  /* Base color */
+  --green06: #17E672;
+  --green07: #14CC66;
+  --green08: #11B358;
+  --green09: #0D994A;
+
+  /* Purple colors */
+  --purple01: #E3CCFF;
+  --purple02: #C799FF;
+  --purple03: #AB66FF;
+  --purple04: #8F33FF;
+  --purple05: #AB1AFF;
+  /* Base color */
+  --purple06: #9917E6;
+  --purple07: #8514CC;
+  --purple08: #7111B3;
+  --purple09: #5C0D99;
+
+  /* Yellow colors */
+  --yellow01: #FEFFC4;
+  --yellow02: #FDFF89;
+  --yellow03: #FCFF4D;
+  --yellow04: #FBFF12;
+  --yellow05: #ECFF1A;
+  /* Base color */
+  --yellow06: #D4E617;
+  --yellow07: #BDCC14;
+  --yellow08: #A5B311;
+  --yellow09: #8E990D;
+}
+
+::selection {
+  background-color: var(--dark-pink);
+  color: var(--white);
 }
 
 * {
@@ -9,18 +65,18 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: var(--white);
   overflow: hidden;
 }
 
 a {
   font-weight: 500;
-  color: #222222;
+  color: var(--black);
   text-decoration: none;
 }
 
 a:hover {
-  color: #222222;
+  color: var(--black);
   text-decoration: underline;
 }
 
@@ -37,5 +93,5 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #f1f1f1 inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--white) inset !important;
 }
